@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.game-screen {
+    background-color: #222;
+    height: 100px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sequence-color {
+    width: 80%;
+    height: 60px;
+    border-radius: 5px;
+    transition: opacity 0.3s;
+}
+
+.game-buttons {
+    margin: 20px 0;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.game-button {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.game-button:hover {
+    transform: scale(1.05);
+}
+
+.game-button:active {
+    transform: scale(0.95);
+}
+
+#button-green {
+    background-color: #2ecc71;
+}
+
+#button-red {
+    background-color: #e74c3c;
+}
+
+#button-yellow {
+    background-color: #f1c40f;
+}
+
+#button-blue {
+    background-color: #3498db;
+}
+
+.button-flash {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #2980b9;
+}
+
+.message {
+    margin-top: 20px;
+    min-height: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 500px) {
+    .button-row {
+        gap: 5px;
+    }
+    
+    .game-button {
+        width: 80px;
+        height: 80px;
+    }
+}
