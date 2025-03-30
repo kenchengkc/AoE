@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Memory Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simon Memory Game</h1>
+        
+        <div class="game-info">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+        </div>
+        
+        <div class="game-screen" id="game-screen">
+            <!-- This is where the sequence will be shown -->
+        </div>
+        
+        <div class="game-buttons">
+            <div class="button-row">
+                <button class="game-button" id="button-green" data-color="green"></button>
+                <button class="game-button" id="button-red" data-color="red"></button>
+            </div>
+            <div class="button-row">
+                <button class="game-button" id="button-yellow" data-color="yellow"></button>
+                <button class="game-button" id="button-blue" data-color="blue"></button>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-button">Start Game</button>
+            <button id="reset-button">Reset Game</button>
+        </div>
+        
+        <div class="message" id="message"></div>
+    </div>
+    
+    <script src="js/game.js"></script>
+</body>
+</html>
